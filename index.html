@@ -1,258 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pilumari Charankumar | Portfolio</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Pilumari Charankumar</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter', sans-serif;
 }
 
 body{
-    background:#0b0f19;
-    color:#e5e7eb;
+  background:#ffffff;
+  color:#111827;
 }
 
-/* Navbar */
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 10%;
-    background:#0b0f19;
-    position:sticky;
-    top:0;
-    z-index:100;
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:80px 24px;
 }
 
-nav a{
-    color:#e5e7eb;
-    margin-left:25px;
-    text-decoration:none;
-    font-weight:500;
-}
-
-nav a:hover{
-    color:#38bdf8;
-}
-
-/* Hero */
+/* HERO */
 .hero{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:100px 10%;
-    flex-wrap:wrap;
-    gap:50px;
-}
-
-.hero-text{
-    max-width:600px;
+  display:grid;
+  grid-template-columns:1.2fr 0.8fr;
+  align-items:center;
+  gap:80px;
 }
 
 .hero h1{
-    font-size:3.2rem;
-    color:white;
-}
-
-.hero span{
-    color:#38bdf8;
+  font-size:3.5rem;
+  font-weight:700;
+  letter-spacing:-1px;
 }
 
 .hero p{
-    margin:20px 0 35px;
-    color:#9ca3af;
+  margin-top:24px;
+  font-size:1.1rem;
+  color:#4b5563;
+  max-width:520px;
 }
 
-/* Buttons */
-.buttons a{
-    display:inline-block;
-    padding:14px 28px;
-    border-radius:8px;
-    margin-right:12px;
-    margin-bottom:12px;
-    text-decoration:none;
-    font-weight:500;
-    transition:0.3s;
+.actions{
+  margin-top:36px;
 }
 
-.btn-primary{
-    background:#38bdf8;
-    color:#020617;
+.actions a{
+  margin-right:24px;
+  text-decoration:none;
+  font-weight:500;
+  color:#2563eb;
 }
 
-.btn-primary:hover{
-    background:#0ea5e9;
-}
-
-.btn-outline{
-    border:1px solid #38bdf8;
-    color:#38bdf8;
-}
-
-.btn-outline:hover{
-    background:#38bdf8;
-    color:#020617;
-}
-
-/* Profile Image */
 .hero img{
-    width:280px;
-    height:280px;
-    border-radius:50%;
-    object-fit:cover;
-    border:5px solid #38bdf8;
-    box-shadow:0 0 40px rgba(56,189,248,0.4);
+  width:280px;
+  height:280px;
+  border-radius:50%;
+  object-fit:cover;
 }
 
-/* Section */
+/* SECTIONS */
 section{
-    padding:90px 10%;
+  margin-top:120px;
 }
 
-.section-title{
-    font-size:2.2rem;
-    margin-bottom:30px;
-    color:white;
+h2{
+  font-size:1.6rem;
+  margin-bottom:24px;
 }
 
-/* Highlights */
-.highlights{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.box{
-    background:#020617;
-    padding:25px;
-    border-radius:12px;
-    border:1px solid #1e293b;
-}
-
-/* Skills */
-.skills{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-    gap:15px;
-}
-
-.skill{
-    background:#020617;
-    padding:15px;
-    border-radius:8px;
-    text-align:center;
-    border:1px solid #1e293b;
-}
-
-/* Projects */
+/* PROJECTS */
 .project{
-    margin-bottom:35px;
+  margin-bottom:36px;
 }
 
-/* Footer */
+.project h3{
+  font-size:1.1rem;
+  margin-bottom:6px;
+}
+
+.project p{
+  color:#4b5563;
+  max-width:700px;
+}
+
+/* FOOTER */
 footer{
-    text-align:center;
-    padding:25px;
-    border-top:1px solid #1e293b;
-    color:#9ca3af;
+  margin-top:140px;
+  padding:40px 0;
+  border-top:1px solid #e5e7eb;
+  color:#6b7280;
+  font-size:0.9rem;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  .hero{
+    grid-template-columns:1fr;
+    text-align:left;
+  }
+  .hero img{
+    margin-top:40px;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<nav>
-    <h2>Charankumar</h2>
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
     <div>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
+      <h1>Pilumari Charankumar</h1>
+      <p>
+        Computer Science undergraduate focused on building reliable software
+        and practical engineering solutions. Interested in systems, robotics,
+        and real-world problem solving.
+      </p>
+
+      <div class="actions">
+        <a href="https://github.com/CHARANKUMAR2005" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
-
-<section class="hero">
-    <div class="hero-text">
-        <h1>Pilumari <span>Charankumar</span></h1>
-        <p>
-            B.Tech CSE (AIML) Student passionate about
-            <strong>Software Development, Robotics, and Real-World Problem Solving</strong>.
-        </p>
-
-        <div class="buttons">
-            <a href="#projects" class="btn-primary">View Projects</a>
-            <a href="https://github.com/CHARANKUMAR2005" target="_blank" class="btn-outline">GitHub</a>
-            <a href="https://www.linkedin.com" target="_blank" class="btn-outline">LinkedIn</a>
-            <a href="#" class="btn-outline">Download Resume</a>
-        </div>
+      </div>
     </div>
 
-    <!-- PHOTO (must be named profile.jpg) -->
     <img src="profile.jpg" alt="Pilumari Charankumar">
-</section>
+  </div>
 
-<section id="about">
-    <h2 class="section-title">Why Me?</h2>
-    <div class="highlights">
-        <div class="box">🚀 Strong fundamentals in CSE & AIML</div>
-        <div class="box">🤖 Hands-on Robotics & Embedded Systems</div>
-        <div class="box">🌍 Real-world web applications</div>
-        <div class="box">⚡ Fast learner & team player</div>
-    </div>
-</section>
+  <!-- ABOUT -->
+  <section>
+    <h2>About</h2>
+    <p style="max-width:700px;color:#4b5563;">
+      I’m a B.Tech CSE (AIML) student at SR University with a strong interest in
+      engineering systems that work reliably in real conditions. I prefer
+      understanding fundamentals deeply and applying them to practical problems
+      rather than building superficial demos.
+    </p>
+  </section>
 
-<section id="skills">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills">
-        <div class="skill">Python</div>
-        <div class="skill">Java</div>
-        <div class="skill">Embedded C</div>
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">SQL</div>
-        <div class="skill">GitHub</div>
-        <div class="skill">Docker</div>
-        <div class="skill">AWS EC2</div>
-    </div>
-</section>
-
-<section id="projects">
-    <h2 class="section-title">Projects</h2>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Selected Work</h2>
 
     <div class="project">
-        <h3>🚗 Line Following Robot</h3>
-        <p>Autonomous robot using sensor-based decision logic.</p>
+      <h3>Line Following Robot</h3>
+      <p>
+        Designed and built an autonomous robot capable of consistent path
+        tracking using sensor-based decision logic, focusing on accuracy and
+        stability rather than visual demos.
+      </p>
     </div>
 
     <div class="project">
-        <h3>🗺️ Mechanic Center Locator</h3>
-        <p>Google Maps-based service finder web app.</p>
+      <h3>Mechanic Center Locator</h3>
+      <p>
+        Built a location-based web application using Google Maps to help users
+        discover and filter nearby mechanic services efficiently.
+      </p>
     </div>
 
     <div class="project">
-        <h3>🔐 HPC Security Toolkit</h3>
-        <p>Explored security mechanisms in HPC systems.</p>
+      <h3>HPC Security Toolkit</h3>
+      <p>
+        Studied security considerations in high-performance computing
+        environments, focusing on vulnerabilities, access control, and system
+        reliability.
+      </p>
     </div>
-</section>
+  </section>
 
-<section id="contact">
-    <h2 class="section-title">Contact</h2>
-    <p>Email: 2303A52138@sru.edu.in</p>
-    <p>Phone: 7095027310</p>
-</section>
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Pilumari Charankumar · Warangal, India
+  </footer>
 
-<footer>
-    © 2026 Pilumari Charankumar · Built with passion 🚀
-</footer>
+</div>
 
 </body>
 </html>
