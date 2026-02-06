@@ -1,127 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Bike Accessories Shop | Hanamkonda</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pilumari Charankumar | Portfolio</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
 
-        header {
-            background-color: #0d6efd;
-            color: white;
-            padding: 25px;
-            text-align: center;
-        }
+body {
+    background: #ffffff;
+    color: #111;
+    line-height: 1.6;
+}
 
-        section {
-            background-color: white;
-            margin: 15px;
-            padding: 20px;
-            border-radius: 6px;
-        }
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    background: white;
+}
 
-        h2 {
-            color: #0d6efd;
-        }
+header a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+}
 
-        ul li {
-            padding: 6px 0;
-            font-size: 16px;
-        }
+header a:hover {
+    color: #2563eb;
+}
 
-        .contact a {
-            color: #0d6efd;
-            text-decoration: none;
-            font-weight: bold;
-        }
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    gap: 50px;
+    flex-wrap: wrap;
+}
 
-        footer {
-            background-color: #0d6efd;
-            color: white;
-            text-align: center;
-            padding: 12px;
-        }
+.hero-text {
+    max-width: 600px;
+}
 
-        /* WhatsApp Button */
-        .whatsapp {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25d366;
-            color: white;
-            padding: 12px 18px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+.hero h1 {
+    font-size: 3rem;
+}
 
-        iframe {
-            width: 100%;
-            height: 300px;
-            border: 0;
-            border-radius: 6px;
-        }
-    </style>
+.hero p {
+    margin: 15px 0 30px;
+    color: #555;
+}
+
+.hero img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #2563eb;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-right: 10px;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+}
+
+.btn.primary {
+    background: #2563eb;
+    color: white;
+}
+
+/* Sections */
+section {
+    padding: 70px 10%;
+}
+
+section.light {
+    background: #f9fafb;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Skills */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+}
+
+.skill {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Projects */
+.project {
+    margin-bottom: 30px;
+}
+
+.project h3 {
+    margin-bottom: 8px;
+}
+
+.project span {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>Bike Accessories Shop</h1>
-    <p>Bike Attributes • Helmets • Gloves</p>
+    <h2>Charankumar</h2>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<section>
-    <h2>About Our Shop</h2>
+<section class="hero">
+    <div class="hero-text">
+        <h1>Pilumari Charankumar</h1>
+        <p>B.Tech CSE (AIML) Student | Software & Robotics Enthusiast</p>
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgo..." alt="Profile Photo">
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
     <p>
-        We sell high-quality bike accessories including helmets, gloves,
-        and other bike attributes. Trusted shop with best prices and
-        customer satisfaction.
+        I am a Computer Science Engineering student specializing in AI & ML.
+        I enjoy building real-world solutions using software, robotics, and web technologies.
+        I am a quick learner and a team player, actively seeking internship and placement opportunities.
     </p>
 </section>
 
-<section>
-    <h2>Products Available</h2>
-    <ul>
-        <li>Bike Attributes</li>
-        <li>Helmets (All Sizes)</li>
-        <li>Riding Gloves</li>
-    </ul>
+<section id="skills" class="light">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">Java</div>
+        <div class="skill">Embedded C</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">SQL</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">Docker</div>
+        <div class="skill">AWS EC2</div>
+    </div>
 </section>
 
-<section>
-    <h2>Shop Timings</h2>
-    <p>🕘 Opening Time: <b>9:00 AM</b></p>
-    <p>🕔 Closing Time: <b>5:00 PM</b></p>
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>🚗 Line Following Robot</h3>
+        <p>Designed and built an autonomous robot using sensor-based logic.</p>
+        <span>Arduino / Embedded C · Sensors · Motors</span>
+    </div>
+
+    <div class="project">
+        <h3>🗺️ Mechanic Center Locator</h3>
+        <p>Google Maps-based web app to locate and filter nearby mechanic centers.</p>
+        <span>HTML · CSS · JavaScript · Google Maps API</span>
+    </div>
+
+    <div class="project">
+        <h3>🔐 HPC Security Toolkit</h3>
+        <p>Studied security challenges and protection mechanisms in HPC systems.</p>
+        <span>System Security · HPC Concepts</span>
+    </div>
 </section>
 
-<section class="contact">
-    <h2>Contact Details</h2>
-    <p>📞 Phone / WhatsApp: <a href="tel:7095027310">7095027310</a></p>
-    <p>📍 Location: Hanamkonda</p>
-</section>
-
-<section>
-    <h2>Shop Location Map</h2>
-    <iframe 
-        src="https://www.google.com/maps?q=Hanamkonda&output=embed">
-    </iframe>
+<section id="contact" class="light">
+    <h2>Contact</h2>
+    <p>Email: <strong>2303A52138@sru.edu.in</strong></p>
+    <p>Phone: <strong>7095027310</strong></p>
+    <p>GitHub: <a href="https://github.com/CHARANKUMAR2005" target="_blank">github.com/CHARANKUMAR2005</a></p>
 </section>
 
 <footer>
-    <p>© 2026 Bike Accessories Shop | Hanamkonda</p>
+    <p>© 2026 Pilumari Charankumar</p>
 </footer>
-
-<!-- WhatsApp Button -->
-<a class="whatsapp"
-   href="https://wa.me/917095027310"
-   target="_blank">
-   💬 WhatsApp
-</a>
 
 </body>
 </html>
